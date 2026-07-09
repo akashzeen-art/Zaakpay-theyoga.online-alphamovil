@@ -154,12 +154,7 @@ export default function Watch() {
           </video>
         </div>
         
-        {(videoTitle || videoDescription) && (
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-            {videoTitle && <h3 className="text-white text-2xl font-bold mb-2">{videoTitle}</h3>}
-            {videoDescription && <p className="text-white/80">{videoDescription}</p>}
-          </div>
-        )}
+
       </div>
     </div>
   );
