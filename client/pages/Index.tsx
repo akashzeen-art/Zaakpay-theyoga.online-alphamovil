@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import VideoBackground from "@/components/VideoBackground";
 import VideoModal from "@/components/VideoModal";
 import SubscriptionModal from "@/components/SubscriptionModal";
+import Carousel from "@/components/Carousel";
 import { useSubscription } from "@/contexts/SubscriptionContext";
 import { usePreserveParams } from "@/hooks/usePreserveParams";
 import { GraduationCap, Clock, Users, Star, ArrowRight, Leaf, Flame } from "lucide-react";
@@ -199,6 +200,113 @@ export default function Index() {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
+          </div>
+        </section>
+
+        {/* Section A — 2×4 Grid */}
+        <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12 animate-slide-up">
+              <h2 className="text-4xl sm:text-5xl font-bold text-white mb-3">
+                Begin Your <span className="text-purple-500">Journey</span>
+              </h2>
+              <p className="text-white/70 text-lg">Foundational classes to start your practice with confidence</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              {[
+                { url: "https://vz-32907a33-0f1.b-cdn.net/067d7625-a886-4795-813b-4b2125fa0139/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/1.png", title: "Class 1" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/c8e740df-eb6f-4c6f-8568-e4285c400570/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/2.png", title: "Class 2" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/1ad7fd82-e2e2-49d5-8185-ff2444076a2a/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/3.png", title: "Class 3" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/0b41c2ca-a771-4bd7-b9c6-8e233878d550/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/4.png", title: "Class 4" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/7b2a0af2-6102-417a-8995-2bd66101ec63/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/5.png", title: "Class 5" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/c03dd922-196d-43f6-845b-9461d7385c73/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/6.png", title: "Class 6" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/a09450ca-2344-404b-8b1b-c3d3600199b8/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/7.png", title: "Class 7" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/af3195d4-b0f8-4676-a3c9-10723aec8b6e/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/8.png", title: "Class 8" },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  onClick={() => openVideo(item.url, item.title)}
+                  className="relative rounded-xl overflow-hidden cursor-pointer group border border-white/20 hover:border-purple-400/60 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20"
+                >
+                  <img src={item.thumb} alt={item.title} className="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                      <div className="w-0 h-0 border-t-[8px] border-t-transparent border-l-[14px] border-l-white border-b-[8px] border-b-transparent ml-1" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section B — Slider */}
+        <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12 animate-slide-up">
+              <h2 className="text-4xl sm:text-5xl font-bold text-white mb-3">
+                Flow &amp; <span className="text-purple-500">Breathe</span>
+              </h2>
+              <p className="text-white/70 text-lg">Mindful sequences to harmonise body and breath</p>
+            </div>
+            <Carousel slidesToShow={4}>
+              {[
+                { url: "https://vz-32907a33-0f1.b-cdn.net/f1166959-ea13-4a4b-869a-ee9c88ef965e/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/9.png", title: "Class 9" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/70da4f79-0c59-41b1-b5d8-6084722d3821/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/10.png", title: "Class 10" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/be6f9d59-f694-40bc-91a9-be08586afe7b/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/11.png", title: "Class 11" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/a295a2c6-99fc-444a-b58c-46b1eb79e7c5/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/12.png", title: "Class 12" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/7f838634-c073-4fec-9621-ddc1c57d5e5f/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/13.png", title: "Class 13" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/5cb49639-04b7-4883-aa23-fec4f59bc1bb/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/14.png", title: "Class 14" },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  onClick={() => openVideo(item.url, item.title)}
+                  className="relative rounded-xl overflow-hidden cursor-pointer group border border-white/20 hover:border-purple-400/60 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20"
+                >
+                  <img src={item.thumb} alt={item.title} className="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                      <div className="w-0 h-0 border-t-[8px] border-t-transparent border-l-[14px] border-l-white border-b-[8px] border-b-transparent ml-1" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Carousel>
+          </div>
+        </section>
+
+        {/* Section C — Slider */}
+        <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12 animate-slide-up">
+              <h2 className="text-4xl sm:text-5xl font-bold text-white mb-3">
+                Strength &amp; <span className="text-purple-500">Restore</span>
+              </h2>
+              <p className="text-white/70 text-lg">Build inner strength and find deep restoration</p>
+            </div>
+            <Carousel slidesToShow={4}>
+              {[
+                { url: "https://vz-32907a33-0f1.b-cdn.net/c866cf98-6885-4008-afa1-853345827c27/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/15.png", title: "Class 15" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/5381176d-c9aa-4a10-97db-52013133bb4b/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/16.png", title: "Class 16" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/46a00fc4-a91d-49dd-b2db-1ee158490911/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/17.png", title: "Class 17" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/f5a74585-c729-44e5-bc12-d82036e55c58/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/18.png", title: "Class 18" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/f9d31dcb-acc6-49f3-a1e0-bf7f86d7458a/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/19.png", title: "Class 19" },
+                { url: "https://vz-32907a33-0f1.b-cdn.net/bda29d2c-0bc2-4011-922b-0cc28af99ce6/play_360p.mp4", thumb: "/YOGA_NEW_MAIN_THUMBNAIL/20.png", title: "Class 20" },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  onClick={() => openVideo(item.url, item.title)}
+                  className="relative rounded-xl overflow-hidden cursor-pointer group border border-white/20 hover:border-purple-400/60 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20"
+                >
+                  <img src={item.thumb} alt={item.title} className="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                      <div className="w-0 h-0 border-t-[8px] border-t-transparent border-l-[14px] border-l-white border-b-[8px] border-b-transparent ml-1" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Carousel>
           </div>
         </section>
 
