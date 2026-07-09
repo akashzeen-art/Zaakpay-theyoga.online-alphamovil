@@ -1,4 +1,4 @@
-# Deployment Guide for E-Yoga World Platform
+# Deployment Guide for The Yoga Platform
 
 ## Build for Production
 

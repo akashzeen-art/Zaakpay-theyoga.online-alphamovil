@@ -20,7 +20,7 @@ export default function Index() {
   };
 
   useEffect(() => {
-    const hasSeenPreloader = localStorage.getItem("E-Yoga World_preloader_shown");
+    const hasSeenPreloader = localStorage.getItem("The Yoga_preloader_shown");
     if (hasSeenPreloader) {
       setShowParticles(true);
     } else {
@@ -207,7 +207,7 @@ export default function Index() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16 animate-slide-up">
               <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-                Why Choose <span className="text-purple-500">E-Yoga World</span>?
+                Why Choose <span className="text-purple-500">The Yoga</span>?
               </h2>
             </div>
 
@@ -251,7 +251,7 @@ export default function Index() {
         <footer className="relative border-t border-white/20 bg-white/10 backdrop-blur-md py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col items-center text-center space-y-6">
-              <img src="/logo.png" alt="E-Yoga World" className="w-20 h-20 object-contain" />
+              <img src="/logo.png" alt="The Yoga" className="w-20 h-20 object-contain" />
               <p className="text-white/80 text-sm">Your gateway to yoga excellence</p>
               <div className="border-t border-white/20 pt-6 w-full">
                 <p className="text-white/80 text-sm mb-2">&copy; 2025, Alphamovil All Rights Reserved</p>

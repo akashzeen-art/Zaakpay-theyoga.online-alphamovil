@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to={`/${queryParams}`} className="flex-shrink-0 flex items-center gap-2 group">
-            <img src="/logo.png" alt="E-Yoga World" className="w-20 h-20 object-contain" />
+            <img src="/logo.png" alt="The Yoga" className="w-20 h-20 object-contain" />
           </Link>
 
           {/* Burger Menu Button (All Screens) */}

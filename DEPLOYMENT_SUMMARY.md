@@ -2,7 +2,7 @@
 
 ## ✅ Build Status: SUCCESS
 
-Your E-Yoga World platform is ready for deployment!
+Your The Yoga platform is ready for deployment!
 
 ### 📦 Build Output
 - **Location**: `dist/` folder
@@ -88,4 +88,4 @@ If you encounter any issues:
 
 ---
 
-**Your E-Yoga World platform is production-ready! 🧘‍♀️**
+**Your The Yoga platform is production-ready! 🧘‍♀️**

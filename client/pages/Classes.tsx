@@ -245,7 +245,7 @@ export default function Classes() {
   ];
 
   useEffect(() => {
-    const hasSeenPreloader = localStorage.getItem("E-Yoga World_preloader_shown");
+    const hasSeenPreloader = localStorage.getItem("The Yoga_preloader_shown");
     if (hasSeenPreloader) {
       setShowParticles(true);
     } else {

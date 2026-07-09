@@ -7,7 +7,7 @@ echo "Converting project from Food theme to Yoga theme..."
 
 # Find all TypeScript/JavaScript files
 find ./client -type f \( -name "*.tsx" -o -name "*.ts" -o -name "*.jsx" -o -name "*.js" \) -exec sed -i '' \
-  -e 's/TheCookStudio/E-Yoga World/g' \
+  -e 's/TheCookStudio/The Yoga/g' \
   -e 's/Recipes/Classes/g' \
   -e 's/recipes/classes/g' \
   -e 's/Recipe/Class/g' \

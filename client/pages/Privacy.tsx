@@ -82,7 +82,7 @@ export default function Privacy() {
               {/* 5 */}
               <h2 className="text-2xl font-bold text-white mt-8">5. Content Validity and Access Terms</h2>
               <p>
-                E-Yoga World is a Video-on-Demand (VOD) yoga subscription service. Access to content is granted upon successful subscription to one of the following plans:
+                The Yoga is a Video-on-Demand (VOD) yoga subscription service. Access to content is granted upon successful subscription to one of the following plans:
               </p>
               <ul className="list-disc pl-6 space-y-1 mt-2">
                 <li><strong>Weekly Plan</strong> — 7 days of full access to all yoga content on the platform</li>
@@ -90,7 +90,7 @@ export default function Privacy() {
                 <li><strong>Quarterly Plan</strong> — 90 days of full access to all yoga content on the platform</li>
               </ul>
               <p className="mt-3">
-                Access to content is valid only for the duration of the active subscription period. Upon expiry, access will be revoked until the subscription is renewed. E-Yoga World reserves the right to modify, update, or remove content from the platform at any time without prior notice.
+                Access to content is valid only for the duration of the active subscription period. Upon expiry, access will be revoked until the subscription is renewed. The Yoga reserves the right to modify, update, or remove content from the platform at any time without prior notice.
               </p>
 
               {/* 6 */}
